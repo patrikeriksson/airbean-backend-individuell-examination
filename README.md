@@ -1,5 +1,3 @@
-# backend-project-grupp-6
-
 # Airbean API
 
 
@@ -9,13 +7,27 @@
 
 ## Start up the project:
 
-1. In the terminal, write git clone INSERT THE LINK TO THE GITHUB REPOSITORY HERE
+1. Clone the repo:
+```sh 
+git https://github.com/patrikeriksson/airbean-backend-individuell-examination.git
+```
 
-2. Ensure you have Node.js installed, then write npm install in the terminal
+2. Navigate to the project:
+```sh
+cd airbean-backend-individuell-examination
+```
 
-3. In the terminal write npm run dev to start the development server.
+3. Ensure you have Node.js installed, then install dependecies:
+```sh
+npm install
+```
 
-4. To test out the application, make sure you have Insomnia or Postman installed on your computer.
+4. Run the application:
+```sh
+npm run dev
+```
+
+5. To test out the application, use Insomnia or Postman.
 
 # API documentation
 
@@ -95,8 +107,3 @@ Patrik Eriksson
 Lina Persson Signell
 Jens Alm
 Victoria Sten Åsenius
-
-
-#### License:
-"ISC"
-# airbean-backend-individuell-examination
