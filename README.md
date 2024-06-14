@@ -8,22 +8,22 @@
 ## Start up the project:
 
 1. Clone the repo:
-```sh 
+```
 git https://github.com/patrikeriksson/airbean-backend-individuell-examination.git
 ```
 
 2. Navigate to the project:
-```sh
+```
 cd airbean-backend-individuell-examination
 ```
 
 3. Ensure you have Node.js installed, then install dependecies:
-```sh
+```
 npm install
 ```
 
 4. Run the application:
-```sh
+```
 npm run dev
 ```
 
