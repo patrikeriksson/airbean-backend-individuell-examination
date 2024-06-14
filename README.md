@@ -52,10 +52,24 @@ Description: This endpoint returns information about the company.
 URL: /user/register <br>
 Method: POST <br>
 Description: This endpoint allows a new user to register.
+Example:
+```
+{
+	"username": "user1",
+	"password": "password"
+}
+```
 
 URL: /user/login <br>
 Method: POST <br>
 Description: This endpoint allows a user to log in.
+Example:
+```
+{
+	"username": "user1",
+	"password": "password"
+}
+```
 
 URL: /user/logout <br>
 Method: POST <br>
@@ -66,6 +80,13 @@ Description: This endpoint allows a user to log out.
 URL: /cart <br>
 method: POST <br>
 Description: this endpoint allow a user to add an item to their cart.
+Example:
+```
+{
+	"title": "Caffè Doppio",
+	"price": 49
+}
+```
 
 URL: /cart <br>
 method: GET <br>
@@ -79,7 +100,7 @@ Description: This endpoint allows a user to remove an item from their cart by sp
 ### Order
 URL: /order <br>
 Method: POST <br>
-Header: Authorization: Bearer token <br>
+Authorization: You have to add your bearer token that you get when logging in as authorization in insomnia/postman for orders to be stored to order history. <br>
 Description: This endpoint allows authenticated users to create a new order.
 
 URL: /order/user/:userId <br>
