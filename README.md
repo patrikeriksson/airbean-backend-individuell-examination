@@ -82,13 +82,44 @@ Method: POST <br>
 Header: Authorization: Bearer token <br>
 Description: This endpoint allows authenticated users to create a new order.
 
-URL: /order/user/:userId
+URL: /order/user/:userId <br>
 Method: GET <br>
 Description: This endpoint shows a list of all your orders, and the total sum. 
 
-URL: /order/:orderId
+URL: /order/:orderId <br>
 Method: GET <br>
 Description: This endpoint shows the status of a specific order.
+
+### Admin
+URL: /admin/login <br>
+Description: Signs you in as admin. <br>
+Use this user for testing:
+```
+{
+	"username": "admin",
+	"password": "admin"
+}
+```
+
+URL: /admin/product <br>
+Method: POST <br>
+Description: Adds a new product to the menu.
+
+URL: /admin/product <br>
+Method: PUT <br>
+Description: Use this endpoint to update a product on the menu.
+
+URL: /admin/product <br>
+Method: DELETE <br>
+Description: Use this endpoint to delete a product from the menu.
+
+URL: /admin/promotion <br>
+Method: POST <br>
+Description: Creates a new promotional offer.
+
+URL: /admin/promotion <br>
+Method: DELETE <br>
+Description: Deletes a promotional offer.
 
 
 ### Security
