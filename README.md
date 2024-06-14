@@ -36,36 +36,19 @@ http://localhost:8000
 
 ## Endpoints:
 
-### 1.
+### Menu
 URL: /menu <br>
 Method: GET <br>
 Description: This endpoint returns the entire menu.
 
 
-### 2.
+### About
 URL: /about <br>
 Method: GET <br>
 Description: This endpoint returns information about the company.
 
 
-### 3.
-URL: /order <br>
-Method: POST <br>
-Header: Authorization: Bearer token <br>
-Description: This endpoint allows authenticated users to create a new order.
-
-URL: /order/user/:userId
-Method: GET <br>
-Description: This endpoint shows a list of all your orders, and the total sum. 
-
-URL: /order/:orderId
-Method: GET <br>
-Description: This endpoint shows the status of a specific order.
-
-
-### 4.
-/user
-
+### User
 URL: /user/register <br>
 Method: POST <br>
 Description: This endpoint allows a new user to register.
@@ -79,7 +62,7 @@ Method: POST <br>
 Description: This endpoint allows a user to log out.
 
 
-### 5.
+### Cart
 URL: /cart <br>
 method: POST <br>
 Description: this endpoint allow a user to add an item to their cart.
@@ -93,6 +76,19 @@ method: DELETE <br>
 Description: This endpoint allows a user to remove an item from their cart by specifying the item's ID in the URL.
 
 
+### Order
+URL: /order <br>
+Method: POST <br>
+Header: Authorization: Bearer token <br>
+Description: This endpoint allows authenticated users to create a new order.
+
+URL: /order/user/:userId
+Method: GET <br>
+Description: This endpoint shows a list of all your orders, and the total sum. 
+
+URL: /order/:orderId
+Method: GET <br>
+Description: This endpoint shows the status of a specific order.
 
 
 ### Security
