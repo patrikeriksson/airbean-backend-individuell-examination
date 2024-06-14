@@ -37,73 +37,72 @@ http://localhost:8000
 ## Endpoints:
 
 ### 1.
-URL: /menu
-Method: GET
+URL: /menu <br>
+Method: GET <br>
 Description: This endpoint returns the entire menu.
 
 
 ### 2.
-URL: /about
-Method: GET
+URL: /about <br>
+Method: GET <br>
 Description: This endpoint returns information about the company.
 
 
 ### 3.
-URL: /order
-Method: POST
-Header: Authorization: Bearer <token>
+URL: /order <br>
+Method: POST <br>
+Header: Authorization: Bearer token <br>
 Description: This endpoint allows authenticated users to create a new order.
 
 URL: /order/user/:userId
-Method: GET
-Description: This endpoint shows a list of all your orders, and the total sum.
+Method: GET <br>
+Description: This endpoint shows a list of all your orders, and the total sum. 
 
 URL: /order/:orderId
-Method: GET
+Method: GET <br>
 Description: This endpoint shows the status of a specific order.
 
 
 ### 4.
 /user
 
-URL: /user/register
-Method: POST
+URL: /user/register <br>
+Method: POST <br>
 Description: This endpoint allows a new user to register.
 
-URL: /user/login
-Method: POST
+URL: /user/login <br>
+Method: POST <br>
 Description: This endpoint allows a user to log in.
 
-URL: /user/logout
-Method: POST
+URL: /user/logout <br>
+Method: POST <br>
 Description: This endpoint allows a user to log out.
 
 
 ### 5.
-URL: /cart
-method: POST
+URL: /cart <br>
+method: POST <br>
 Description: this endpoint allow a user to add an item to their cart.
 
-URL: /cart
-method: GET
+URL: /cart <br>
+method: GET <br>
 Description: this endpoint returns the current contents of the cart along with the total price.
 
-URL: /cart/:id
-method: DELETE
+URL: /cart/:id <br>
+method: DELETE <br>
 Description: This endpoint allows a user to remove an item from their cart by specifying the item's ID in the URL.
 
 
 
 
 ### Security
-All endpoints that require authentication use JWT (JSON Web Token) to secure the API
-
-. Send the JWT token in the Authorization header with each request that requires authentication.
+All endpoints that require authentication use JWT (JSON Web Token) to secure the API. <br>
+Send the JWT token in the Authorization header with each request that requires authentication.
 
 
 ### Contributors:
-Linnea Sjöholm
-Patrik Eriksson
-Lina Persson Signell
-Jens Alm
-Victoria Sten Åsenius
+Linnea Sjöholm <br>
+Patrik Eriksson <br>
+Lina Persson Signell <br>
+Jens Alm <br>
+Victoria Sten Åsenius <br>
