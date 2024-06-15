@@ -3,10 +3,10 @@ import { menuDb } from "../../config/db.js";
 async function addProduct(req, res, next) {
   const { title, desc, price, preptime } = req.body;
   const newProduct = {
-    title: title,
-    desc: desc,
-    price: price,
-    preptime: preptime,
+    title,
+    desc,
+    price,
+    preptime,
     createdAt: new Date(),
   };
   menuDb.insert(newProduct);

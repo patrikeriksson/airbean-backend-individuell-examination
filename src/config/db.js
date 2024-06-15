@@ -5,5 +5,6 @@ const orderDb = new nedb({ filename: "orders.db", autoload: true });
 const userDb = new nedb({ filename: "users.db", autoload: true });
 const menuDb = new nedb({ filename: "menu.db", autoload: true });
 const adminDb = new nedb({ filename: "admin.db", autoload: true });
+const promoDb = new nedb({ filename: "promo.db", autoload: true });
 
-export { cartDb, orderDb, userDb, menuDb, adminDb };
+export { cartDb, orderDb, userDb, menuDb, adminDb, promoDb };
