@@ -125,22 +125,61 @@ Use this user for testing:
 URL: /admin/product <br>
 Method: POST <br>
 Description: Adds a new product to the menu.
+Example:
+```
+{
+    "title": "Kanelbulle",
+    "desc": "Stor, saftig kanelbulle med fyllning av kanel, smör och socker",
+    "price": 39,
+    "preptime": 2
+}
+```
 
 URL: /admin/product <br>
 Method: PUT <br>
 Description: Use this endpoint to update a product on the menu.
+Example:
+```
+{
+	"productId": "<Here you enter the id of an existing item on the menu that you wish to update>",
+	"title": "Dunder Kaffe",
+	"desc": "Jättegött",
+	"price": 59,
+	"preptime": 10
+}
+```
 
 URL: /admin/product <br>
 Method: DELETE <br>
 Description: Use this endpoint to delete a product from the menu.
+Example:
+```
+{
+	"productId": "<Here you enter the id of an existing item on the menu that you wish to delete>"
+}
+```
+
 
 URL: /admin/promotion <br>
 Method: POST <br>
 Description: Creates a new promotional offer.
+Example:
+```
+	"title": "En riktigt god fika",
+	"products": ["Bryggkaffe", "Kanelbulle"],
+	"price": 50
+}
+```
 
 URL: /admin/promotion <br>
 Method: DELETE <br>
 Description: Deletes a promotional offer.
+Example:
+```
+{
+	"promoId": "<Here you enter the id of an existing promo that you wish to delete>"
+}
+```
 
 
 ### Security
