@@ -165,6 +165,7 @@ Method: POST <br>
 Description: Creates a new promotional offer.
 Example:
 ```
+{
 	"title": "En riktigt god fika",
 	"products": ["Bryggkaffe", "Kanelbulle"],
 	"price": 50
